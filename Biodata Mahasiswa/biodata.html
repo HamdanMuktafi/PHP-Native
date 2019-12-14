@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div h3{text-align: center;}
+
+div {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  padding: 20px;
+}
+</style>
+<body>
+
+
+
+<div>
+  <h3>Biodata Mahasiswa</h3>
+  <form method="post" action="index.php">
+    <label for="nama">Nama</label>
+    <input type="text" id="fnama" name="nama" placeholder="Masukkan nama..">
+
+    <label for="nama">Nomor Induk Mahasiswa</label>
+    <input type="text" id="lnim" name="nim" placeholder="Masukkan nim..">
+
+    <label for="fakultas">Fakultas</label>
+    <input type="text" id="fakultas" name="fakultas" placeholder="Masukkan fakultas..">
+
+
+    <label for="jurusan">Jurusan</label> 
+    <br><br>
+    <input type="radio" name="jurusan" value="Sistem Informasi" checked> Sistem Informasi<br>
+    <input type="radio" name="jurusan" value="Ilmu Komputer"> Ilmu Komputer<br>
+    <input type="radio" name="jurusan" value="Teknik Informatika"> Teknik Informatika <br><br>
+
+    <label for="hobby">Hobby</label>
+    <br>
+    <br>
+    <input type="checkbox" name="hobi1" value="membaca"> Membaca<br>
+    <input type="checkbox" name="hobi2" value="touring"> Touring<br>
+    <input type="checkbox" name="hobi3" value="hiking" checked> Hiking<br>
+    <input type="checkbox" name="hobi4" value="ngoding" checked> Ngoding<br>
+
+
+    <br>
+    <label for="semester">Pilih Semester</label>
+    <select id="semester" name="semester">
+      <option value="semester1">Semester 1</option>
+      <option value="semester2">Semester 2</option>
+      <option value="semester3">Semester 3</option>
+      <option value="semester4">Semester 4</option>
+      <option value="semester5">Semester 5</option>
+      <option value="semester6">Semester 6</option>
+      <option value="semester7">Semester 7</option>
+      <option value="semester8">Semester 8</option>
+    </select>
+    
+    <label for="tempatlahir">Tempat Lahir</label>
+    <input type="text" id="tempatlahir" name="tempatlahir" placeholder="Masukkan tempat lahir..">
+
+    <label for="tanggallahir">Tanggal Lahir</label>
+    <input type="date" id="tanggallahir" name="tanggallahir" placeholder="Masukkan tanggal lahir..">
+
+    <label for="tentang">Tentang</label><br>
+    <textarea name="tentang">
+
+    </textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+

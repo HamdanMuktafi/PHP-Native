@@ -1,0 +1,2 @@
+bikin database baru dengan nama project
+buat tabel dengan nama users
